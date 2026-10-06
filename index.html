@@ -22,65 +22,105 @@
 </head>
 <body>
 
+<main>
 <h1>Privacy Policy — Local AI Chat</h1>
-<p class="updated">Last updated: August 18, 2026</p>
+<p class="updated">Last updated: October 6, 2026</p>
 
-<p>
-Local AI Chat ("the app") is a local network client for self-hosted AI
-language model servers (such as Ollama, LM Studio, llama.cpp,
-text-generation-webui, KoboldCpp, or any OpenAI-compatible server) that
-you run yourself on a computer on your own Wi-Fi network.
-</p>
+<p>Local AI Chat ("the app") is a client for self-hosted AI servers such as
+Ollama and LM Studio. You choose the server that receives your requests.
+This policy explains how the app handles conversations, local settings,
+and advertising data.</p>
+<p>The advertising sections apply to Android versions that include Google
+AdMob. Earlier versions without AdMob do not perform the advertising-related
+data processing described here.</p>
 
-<h2>Data collection and storage</h2>
-<p>
-The app does not collect, transmit, or share any personal data with the
-developer or any third party. Specifically:
-</p>
+<h2>Conversations and settings</h2>
 <ul>
-  <li>No account or sign-up is required or offered.</li>
-  <li>No analytics, tracking, advertising, or crash-reporting services are integrated into the app.</li>
-  <li>Chat messages and conversation history are stored only on your device, in a local database, and are never uploaded anywhere.</li>
-  <li>Server connection details you enter (such as IP address, port, and server name) are stored only on your device.</li>
+  <li>No app account or sign-up is required.</li>
+  <li>Chat history, saved server addresses and ports, selected models, and app
+  preferences are stored in the app's local storage on your device.</li>
+  <li>When you send a message, the app sends that message and conversation
+  context to your configured AI server to generate a reply. It also contacts
+  that server to test the connection and retrieve available models.</li>
+  <li>The server operator controls how that server processes and retains
+  requests. If you connect to a server operated by someone else, their data
+  practices apply to the information you send.</li>
+  <li>The app does not send chat messages, conversation history, or saved
+  server connection details to AdMob or a developer-operated backend.</li>
+  <li>The expiry time of a rewarded ad-free period is stored on your device.</li>
 </ul>
 
-<h2>Network communication</h2>
-<p>
-The only network communication the app performs is a direct connection,
-over your local Wi-Fi network, between your device and the AI model
-server you configure. This connection goes to an address you enter
-yourself — it is never sent to the developer or to any server operated
-by the developer. Because self-hosted local AI servers are typically
-run without a TLS certificate, this connection uses unencrypted HTTP,
-the same as connecting to any other device on your home network (for
-example, a printer or a smart TV admin page).
-</p>
+<h2>Advertising and Google's services</h2>
+<p>Ad-supported Android versions use Google AdMob for banner, interstitial,
+and optional rewarded ads. The Google Mobile Ads SDK collects and shares
+information for advertising, analytics, and fraud prevention. This can include:</p>
+<ul>
+  <li>Your device's IP address, which can indicate approximate location.</li>
+  <li>Advertising ID, app set ID, and other applicable device or account identifiers.</li>
+  <li>App and ad interactions, such as launches, taps, and video views.</li>
+  <li>Diagnostics about app and SDK performance.</li>
+</ul>
+<p>Advertising data is separate from your AI conversations. The SDK encrypts
+its data in transit using TLS. Processing depends on applicable consent choices,
+SDK settings, and Google's policies.</p>
+<p>For details, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+and <a href="https://policies.google.com/technologies/ads">Google's advertising information</a>.</p>
 
-<h2>Permissions</h2>
-<p>
-The app requests only the Internet (network access) permission, which
-is required to connect to your local AI server. No other device
-permissions (camera, microphone, location, contacts, storage, etc.) are
-requested or used.
-</p>
+<h2>Consent and your choices</h2>
+<p>The app uses Google's User Messaging Platform to request updated consent
+information and display privacy messages when required. Where available, use
+<strong>Settings → Ad privacy choices</strong> to revisit your choices.
+Android also provides controls to reset or delete your advertising ID.</p>
+<p>Watching a rewarded ad is optional. Earning the reward hides banners and
+interstitial ads for 30 minutes. This does not erase previously processed data
+or disable all advertising-SDK or consent-service activity. Chatting does not
+require watching a rewarded ad, and local-server chat can work without an
+internet connection if your server remains reachable.</p>
+
+<h2>Network access and security</h2>
+<p>The app connects to your configured AI server and, in ad-supported Android
+versions, to advertising and consent services. The current AI-server connection
+uses <strong>unencrypted HTTP</strong>. Use it only on a trusted network; other
+parties with access to that traffic may be able to read it. Advertising traffic
+uses separate connections and does not make AI-server traffic encrypted.</p>
+<p>The Android app and its advertising SDK use network access, network-state,
+and advertising-related permissions, including advertising ID. The app does
+not request camera, microphone, contacts, or precise-location access.</p>
+
+<h2>Data retention and deletion</h2>
+<ul>
+  <li>Local chat history remains until you delete it or clear the app's data.
+  You can delete conversations from the chat-history panel and saved servers
+  from Settings.</li>
+  <li>Use Android's app-storage settings to clear Local AI Chat's local data,
+  including preferences and the saved reward expiry. Uninstalling normally
+  removes app-local data. Device backups or transfers may retain or restore
+  app data depending on your Android settings; manage those copies through
+  your device or backup provider.</li>
+  <li>Deleting local history does not delete copies or logs held by your AI
+  server. Manage those on the server or contact its operator.</li>
+  <li>Google controls retention and deletion of the advertising data it
+  processes under its privacy policy. Clearing this app's data does not
+  automatically delete information already processed by Google. See
+  <a href="https://policies.google.com/privacy#infodelete">Google's deletion and retention information</a>.</li>
+</ul>
 
 <h2>Children's privacy</h2>
-<p>
-The app does not knowingly collect any information from anyone,
-including children, because it does not collect information at all.
-</p>
-
-<h2>Changes to this policy</h2>
-<p>
-If this policy changes, the updated version will be posted at this same
-URL with a new "Last updated" date.
-</p>
+<p>Parents or guardians with questions or concerns about a child's information
+can contact us using the address below. Advertising services and your configured
+AI server process information as described in this policy. To manage information
+held by Google or a separately operated AI server, use that provider's privacy
+controls or contact the provider.</p>
 
 <h2>Contact</h2>
-<p>
-Questions about this policy can be sent to:
-<a href="mailto:sadid.jones@gmail.com">sadid.jones@gmail.com</a>
-</p>
+<p>For privacy questions or requests, contact the Local AI Chat developer at
+<a href="mailto:sadid.jones@gmail.com">sadid.jones@gmail.com</a>.
+If you email us, your email address and the information you include will be
+processed to respond to your request. Do not include sensitive chat content
+unless it is necessary for your inquiry.</p>
 
+<h2>Changes to this policy</h2>
+<p>Updates will be posted on this page with a revised "Last updated" date.</p>
+</main>
 </body>
 </html>
